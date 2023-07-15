@@ -18,7 +18,19 @@ body{
     background-position: center;
     width: 35vw;
     min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+.pic-logo{
+    margin-bottom: 50px;
+    margin-left: 20px;
+    height:calc(10vh + 2vw);
+    width: auto;
+    transform: rotate(-2deg);
+}
+
 
 .main-card{
     width: 65vw;
