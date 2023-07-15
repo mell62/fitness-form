@@ -1,5 +1,55 @@
+:root{
+    --primary-color: rgba(251, 194, 0, 1);
+    --secondary-color: rgb(187,33,27);
+}
+
+@font-face {
+    font-family: header-font;
+    src: url(../fonts/Norse-Bold.otf);
+}
+
 body{
-    height: 100vh;
+    display: flex;
+}
+
+.pic{
     background: url(../images/bg.jpg) no-repeat;
-    background-size: contain;
+    background-size: cover;
+    background-position: center;
+    width: 35vw;
+    min-height: 100vh;
+}
+
+.main-card{
+    width: 65vw;
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    height: 100vh;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    padding: 3vh 5vw;
+}
+
+h1{
+    font-size: calc(1vh + 1vw + 1rem);
+    color: var(--primary-color);
+}
+
+h1 .brand{
+    font-family: header-font, sans-serif;
+    border-bottom: 0.3rem solid var(--primary-color);
+}
+
+h1:not(.brand){
+    font-family: "Varela Round", sans-serif;
+    font-weight: 400;
+}
+
+img{
+    width: auto;
+    height: 7rem;
 }
