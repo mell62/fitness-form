@@ -35,8 +35,7 @@ body{
 .main-card{
     width: 65vw;
     display: flex;
-    align-items: baseline;
-    justify-content: center;
+    flex-direction: column;
     height: 100vh;
     background-color: rgba(181,130,88,0.1);
 }
@@ -46,9 +45,10 @@ header{
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    padding: 3vh 5vw;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
     width: 65vw;
-
+    height: 20vh;
 }
 
 .heading{
@@ -81,4 +81,10 @@ img{
     font-family: "Varela Round", sans-serif;
     font-weight: 400;
     font-size: calc(1vh + 0.5vw + 2px);
+}
+
+main{
+    height: 80vh;
+    width: 65vw;
+    display: flex;
 }
