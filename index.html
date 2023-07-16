@@ -33,8 +33,8 @@
         </p>
       </header>
       <main>
-        <div class="form">
-          <form action="" method="">
+        <form action="" method="">
+          <div class="form">
             <div class="first-row">
               <input
                 type="text"
@@ -47,13 +47,6 @@
                 placeholder="Last Name"
                 id="last-name"
                 name="last-name"
-              />
-              <input
-                type="text"
-                placeholder="Gender"
-                id="gender"
-                name="gender"
-                list="gender-list"
               />
               <datalist id="gender-list">
                 <option>Male</option>
@@ -75,8 +68,31 @@
                 name="ph-no"
               />
             </div>
-          </form>
-        </div>
+            <div class="third-row">
+              <input
+                type="text"
+                placeholder="Gender"
+                id="gender"
+                name="gender"
+              />
+              <input
+                type="text"
+                placeholder="Fitness Goals"
+                id="goals"
+                name="goals"
+              />
+            </div>
+            <div class="fourth-row">
+              <textarea
+                name="info"
+                id="info"
+                rows="6"
+                cols="50"
+                placeholder="Additional Notes:"
+              ></textarea>
+            </div>
+          </div>
+        </form>
       </main>
     </div>
   </body>
