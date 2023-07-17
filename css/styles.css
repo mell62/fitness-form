@@ -117,7 +117,6 @@ main{
     justify-content: space-evenly;
     flex-wrap: wrap;
     row-gap: 4rem;
-    padding-right: 28px;
 }
 
 .fourth-row{
@@ -140,6 +139,7 @@ textarea,
 button{
     padding: 0.8rem;
     border-radius: 1rem;
+    box-sizing: border-box;
 }
 
 select,
