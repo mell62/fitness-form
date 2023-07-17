@@ -38,7 +38,7 @@ body{
     display: flex;
     flex-direction: column;
     height: 100vh;
-    background-color: rgba(181,130,88,0.1);
+    background-color: rgba(181,130,88,0.2);
 }
 
 header{
@@ -85,14 +85,12 @@ img{
 }
 
 main{
-    height: 80vh;
     display: flex;
     padding-top: 4vh;
 }
 
 .form{
     width: 65vw;
-    height: 80vh;
     display: flex;
     flex-direction: column;
     gap: 4rem;
