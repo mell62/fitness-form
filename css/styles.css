@@ -11,6 +11,7 @@
 
 body{
     display: flex;
+    font-family: var(--primary-font);
 }
 
 .pic{
@@ -132,8 +133,4 @@ main{
     row-gap: 4rem;
 }
 
-input::placeholder, 
-textarea::placeholder,
-.fifth-row button{
-    font-family: var(--primary-font);
-}
+
