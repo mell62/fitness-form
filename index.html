@@ -48,11 +48,6 @@
                 id="last-name"
                 name="last-name"
               />
-              <datalist id="gender-list">
-                <option>Male</option>
-                <option>Female</option>
-                <option>Other</option>
-              </datalist>
             </div>
             <div class="second-row">
               <input
@@ -74,7 +69,13 @@
                 placeholder="Gender"
                 id="gender"
                 name="gender"
+                list="gender-list"
               />
+              <datalist id="gender-list">
+                <option>Male</option>
+                <option>Female</option>
+                <option>Other</option>
+              </datalist>
               <input
                 type="text"
                 placeholder="Fitness Goals"
