@@ -95,7 +95,7 @@ main{
     width: 65vw;
     display: flex;
     flex-direction: column;
-    gap: 4rem;
+    gap: 3rem;
 }
 
 .first-row{
@@ -133,8 +133,17 @@ main{
     row-gap: 4rem;
 }
 
-select,input{
-    width: 20%;
+select,
+input,
+textarea,
+button{
+    padding: 0.8rem;
+    border-radius: 1rem;
+}
+
+select,
+input{
+    width: 18%;
 }
 
 textarea{
