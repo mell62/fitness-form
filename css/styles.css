@@ -39,6 +39,7 @@ body{
     flex-direction: column;
     height: 100vh;
     background-color: rgba(181,130,88,0.2);
+    border-left: 0.5rem solid rgba(181,130,88);
 }
 
 header{
@@ -129,4 +130,10 @@ main{
     justify-content: center;
     flex-wrap: wrap;
     row-gap: 4rem;
+}
+
+input::placeholder, 
+textarea::placeholder,
+.fifth-row button{
+    font-family: var(--primary-font);
 }
