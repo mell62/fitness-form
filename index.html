@@ -41,12 +41,19 @@
                 placeholder="First Name"
                 id="first-name"
                 name="first-name"
+                maxlength="20"
+                pattern="[A-Za-z\s.]+"
+                required
+                title="Enter alphabets, decimals or white spaces"
               />
               <input
                 type="text"
                 placeholder="Last Name"
                 id="last-name"
                 name="last-name"
+                maxlength="20"
+                pattern="[A-Za-z\s.]+"
+                title="Enter alphabets, decimals or white spaces"
               />
             </div>
             <div class="second-row">
@@ -55,12 +62,17 @@
                 placeholder="E-mail"
                 id="email"
                 name="email"
+                required
               />
               <input
                 type="tel"
                 placeholder="Phone Number"
                 id="ph-no"
                 name="ph-no"
+                maxlength="15"
+                pattern="[0-9\s+]+"
+                title="Enter a valid phone number"
+                required
               />
             </div>
             <div class="third-row">
@@ -70,18 +82,31 @@
                 id="gender"
                 name="gender"
                 list="gender-list"
+                maxlength="20"
+                pattern="[a-zA-Z]+"
+                title="Enter alphabets"
               />
               <datalist id="gender-list">
                 <option>Male</option>
                 <option>Female</option>
                 <option>Other</option>
               </datalist>
-              <input
-                type="text"
-                placeholder="Fitness Goals"
-                id="goals"
-                name="goals"
-              />
+              <select name="goals" id="goals" required>
+                <option value="fitness-goals" disabled selected>
+                  Fitness Goals
+                </option>
+                <option value="general-fitness">General Fitness</option>
+                <option value="weight-loss">Weight Loss</option>
+                <option value="weight-gain">Weight Gain</option>
+                <option value="strength-training">Strength Training</option>
+                <option value="endurance-training">Endurance Training</option>
+                <option value="body-toning">Body Toning</option>
+                <option value="flexibility-mobility">
+                  Flexibility & Mobility
+                </option>
+                <option value="sports-training">Sports Training</option>
+                <option value="other-goals">Other goals</option>
+              </select>
             </div>
             <div class="fourth-row">
               <textarea
@@ -89,7 +114,7 @@
                 id="info"
                 rows="6"
                 cols="50"
-                placeholder="Additional Notes:"
+                placeholder="Additional Notes: You could mention any other goals, medical issues, schedule issues, etc.."
               ></textarea>
             </div>
             <div class="fifth-row"><button>Sign Up</button></div>
