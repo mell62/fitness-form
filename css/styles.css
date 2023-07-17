@@ -137,3 +137,7 @@ select,input{
     width: 20%;
 }
 
+textarea{
+    resize: none;
+}
+
