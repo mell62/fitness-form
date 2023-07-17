@@ -133,4 +133,7 @@ main{
     row-gap: 4rem;
 }
 
+select,input{
+    width: 20%;
+}
 
