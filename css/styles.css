@@ -48,8 +48,7 @@ header{
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    padding-top: 5vh;
-    padding-bottom: 5vh;
+    padding-top: 3vh;
     width: 65vw;
     height: 20vh;
 }
@@ -67,6 +66,7 @@ h1{
 h1 .brand{
     font-family: header-font, sans-serif;
     border-bottom: 0.3rem solid var(--primary-color);
+    margin-left: -0.5rem;
 }
 
 h1:not(.brand){
@@ -80,7 +80,6 @@ img{
 }
 
 .message{
-    padding-top: 1rem;
     font-family: var(--primary-font);
     font-weight: 400;
     font-size: calc(1vh + 0.5vw + 2px);
@@ -88,14 +87,14 @@ img{
 
 main{
     display: flex;
-    padding-top: 4vh;
+    padding-top: 3vh;
 }
 
 .form{
     width: 65vw;
     display: flex;
     flex-direction: column;
-    gap: 3rem;
+    gap: 2.5rem;
 }
 
 .first-row{
@@ -121,7 +120,7 @@ main{
 
 .fourth-row{
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     flex-wrap: wrap;
     row-gap: 4rem;
 }
@@ -133,12 +132,18 @@ main{
     row-gap: 4rem;
 }
 
+.sixth-row{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    row-gap: 4rem;
+}
+
 select,
 input,
 textarea,
 button{
     padding: 0.8rem;
-    border-radius: 1rem;
     box-sizing: border-box;
 }
 
@@ -151,3 +156,6 @@ textarea{
     resize: none;
 }
 
+select{
+    appearance: none;
+}
