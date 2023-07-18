@@ -108,10 +108,14 @@
             </div>
             <div class="fourth-row">
               <input type="password" placeholder="Enter password" /
-              class="password-field"><input
+              class="password-field" minlength="8" maxlength="18"
+              pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]+$" title="Enter at
+              least 8 characters of alphabets and numbers" required><span></span
+              ><input
                 type="password"
                 placeholder="Confirm password"
                 class="cpassword-field"
+                required
               />
             </div>
             <div class="fifth-row">
@@ -121,7 +125,7 @@
                 rows="6"
                 cols="50"
                 maxlength="200"
-                placeholder="Additional Notes: You could mention any other goals, medical issues, schedule issues, etc.."
+                placeholder="Notes: You could mention any other goals, medical issues, schedule issues, etc.."
               ></textarea>
             </div>
             <div class="sixth-row">
