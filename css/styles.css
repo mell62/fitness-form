@@ -1,5 +1,5 @@
 :root{
-    --primary-color: rgba(251, 194, 0, 1);
+    --primary-color: rgb(240, 184, 0);
     --secondary-color: rgb(187,33,27);
     --border-color: rgba(181,130,88);
     --primary-font: "Varela Round", sans-serif;
@@ -150,6 +150,7 @@ main{
     justify-content: space-evenly;
     flex-wrap: wrap;
     row-gap: 4rem;
+    position: relative;
 }
 
 .fifth-row{
@@ -196,3 +197,27 @@ input::placeholder{
 input:invalid{
     color: red;
 }
+
+input[type="password"] + span{
+    position: absolute;
+    width: 15%;
+}
+
+input[type="password"]:focus + span::after{
+    opacity: 1;
+}
+
+input[type="password"] + span::after{
+    content: "Enter at least 8 characters containing alphabets and numbers";
+    position: absolute;
+    left:-1vw;
+    font-size: calc(0.1vh + 0.1vw + 12px);
+    opacity: 0;
+    transition: opacity 0.5s;
+    background-color: var(--secondary-color);
+    color: white;
+    border: 1px solid white;
+    padding: calc(0.4vh + 0.2vw + 1px);
+    box-shadow: 1px 1px 4px grey, -1px -1px 4px grey;
+}
+
