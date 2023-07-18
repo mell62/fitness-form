@@ -192,3 +192,7 @@ select{
 input::placeholder{
     border-bottom: 1px solid grey;
 }
+
+input:invalid{
+    color: red;
+}
