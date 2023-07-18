@@ -1,6 +1,7 @@
 :root{
     --primary-color: rgba(251, 194, 0, 1);
     --secondary-color: rgb(187,33,27);
+    --border-color: rgba(181,130,88);
     --primary-font: "Varela Round", sans-serif;
 }
 
@@ -40,7 +41,7 @@ body{
     flex-direction: column;
     height: 100vh;
     background-color: rgba(181,130,88,0.2);
-    border-left: 0.5rem solid rgba(181,130,88);
+    border-left: 0.5rem solid var(--border-color);
 }
 
 header{
@@ -48,9 +49,9 @@ header{
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    padding-top: 3vh;
     width: 65vw;
     height: 20vh;
+    padding-top: 1vh;
 }
 
 .heading{
@@ -76,25 +77,51 @@ h1:not(.brand){
 
 img{
     width: auto;
-    height: 7rem;
+    height: calc(10vh + 2vw);
+}
+
+p{
+    margin: 0;
 }
 
 .message{
     font-family: var(--primary-font);
     font-weight: 400;
     font-size: calc(1vh + 0.5vw + 2px);
+    padding-top: 1vh;
 }
 
 main{
     display: flex;
-    padding-top: 3vh;
+    padding-top: 4vh;;
 }
 
 .form{
     width: 65vw;
     display: flex;
     flex-direction: column;
-    gap: 2.5rem;
+    gap: 4.5vh;
+    position: relative;
+}
+
+.form::before{
+    content: "";
+    background-color: var(--border-color);
+    width: 25vw;
+    height: 1px;
+    position: absolute;
+    left: 19.5vw;
+    top: -2vh;
+}
+
+.form::after{
+    content: "";
+    background-color: var(--border-color);
+    width: 26vw;
+    height: 1px;
+    position: absolute;
+    left: 19.5vw;
+    bottom: -3vh;
 }
 
 .first-row{
@@ -143,8 +170,9 @@ select,
 input,
 textarea,
 button{
-    padding: 0.8rem;
+    padding: 0.6rem;
     box-sizing: border-box;
+    border: 2px solid var(--border-color);
 }
 
 select,
@@ -158,4 +186,9 @@ textarea{
 
 select{
     appearance: none;
+    background-color: white;
+}
+
+input::placeholder{
+    border-bottom: 1px solid grey;
 }
