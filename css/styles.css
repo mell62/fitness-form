@@ -1,6 +1,6 @@
 :root{
     --primary-color: rgb(240, 184, 0);
-    --secondary-color: rgb(187,33,27);
+    --secondary-color: rgb(227,82,44);
     --border-color: rgba(181,130,88);
     --primary-font: "Varela Round", sans-serif;
 }
@@ -195,7 +195,7 @@ input::placeholder{
 }
 
 input:invalid{
-    color: red;
+    color: var(--secondary-color);
 }
 
 input[type="password"] + span{
