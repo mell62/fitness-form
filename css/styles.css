@@ -29,7 +29,7 @@ body{
 .pic-logo{
     margin-bottom: 50px;
     margin-left: 20px;
-    height:calc(10vh + 2vw);
+    height:calc(8vh + 2vw);
     width: auto;
     transform: rotate(-2deg);
 }
@@ -56,7 +56,11 @@ header{
 
 .heading{
     display: flex;
-    align-items: center;
+    align-items: end;
+}
+
+.logo{
+    display: flex;
 }
 
 h1{
@@ -66,18 +70,18 @@ h1{
 
 h1 .brand{
     font-family: header-font, sans-serif;
-    border-bottom: 0.3rem solid var(--primary-color);
+    border-bottom: 0.2rem solid var(--primary-color);
     margin-left: -0.5rem;
 }
 
-h1:not(.brand){
+h1 span.brand-line{
     font-family: var(--primary-font);
     font-weight: 400;
 }
 
 img{
     width: auto;
-    height: calc(10vh + 2vw);
+    height: calc(4vh + 2vw);
 }
 
 p{
@@ -88,7 +92,7 @@ p{
     font-family: var(--primary-font);
     font-weight: 400;
     font-size: calc(1vh + 0.5vw + 2px);
-    padding-top: 1vh;
+    padding-top: 3vh;
 }
 
 main{
