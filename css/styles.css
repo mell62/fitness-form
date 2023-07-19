@@ -70,7 +70,7 @@ h1{
 
 h1 .brand{
     font-family: header-font, sans-serif;
-    border-bottom: 0.2rem solid var(--primary-color);
+    border-bottom: calc(0.2vh + 0.1vw) solid var(--primary-color);
     margin-left: -0.5rem;
 }
 
