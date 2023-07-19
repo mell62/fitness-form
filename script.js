@@ -8,8 +8,13 @@ function passCheck(event) {
   }
 }
 
-form.addEventListener("submit", passCheck);
+function colorValidation() {
+  if (passField.value !== cpassField.value) {
+    cpassField.setAttribute("style", "color:rgb(227,82,44);");
+  } else {
+    cpassField.removeAttribute("style", "color:rgb(227,82,44);");
+  }
+}
 
-// signupBtn.addEventListener("click", () => {
-//   console.log(passField.value);
-// });
+form.addEventListener("submit", passCheck);
+cpassField.addEventListener("input", colorValidation);
