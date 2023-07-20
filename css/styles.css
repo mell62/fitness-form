@@ -27,8 +27,8 @@ body{
 }
 
 .pic-logo{
-    margin-bottom: 50px;
-    margin-left: 20px;
+    margin-bottom: 10%;
+    margin-left: 5%;
     height:calc(8vh + 2vw);
     width: auto;
     transform: rotate(-2deg);
