@@ -173,6 +173,13 @@ button{
     border-radius: 4px;
     color: white;
     font-weight: bold;
+    transition: transform 0.3s ease-out;
+    cursor: pointer;
+}
+
+button:hover{
+    transform: scale(1.1);
+    transform-origin: bottom;
 }
 
 textarea{
