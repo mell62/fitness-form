@@ -1,7 +1,7 @@
 :root{
     --primary-color: rgb(240, 184, 0);
     --secondary-color: rgb(227,82,44);
-    --border-color: rgb(184, 165, 149);
+    --border-color: rgb(185, 161, 141);
     --primary-font: "Varela Round", sans-serif;
 }
 
@@ -111,20 +111,20 @@ main{
 .form::before{
     content: "";
     background-color: var(--border-color);
-    width: 25vw;
+    width: 37.4vw;
     height: 1px;
     position: absolute;
-    left: 19.5vw;
+    left: 13.7vw;
     top: -2.8vh;
 }
 
 .form::after{
     content: "";
     background-color: var(--border-color);
-    width: 26vw;
+    width: 37.4vw;
     height: 1px;
     position: absolute;
-    left: 19.5vw;
+    left: 13.7vw;
     bottom: -3vh;
 }
 
@@ -266,7 +266,7 @@ textarea + label.first-field{
     position: absolute;
     left: 20vw;
     top: -3vh;
-    margin-top: 1vh;                            /*So the label doesn't go too far below into the input field upon viewport shrink*/
+    margin-top: 1vh;
     font-size: calc(0.5vh + 0.3vw + 5px);
     transition: opacity 0.5s;
 }
