@@ -1,7 +1,7 @@
 :root{
     --primary-color: rgb(240, 184, 0);
     --secondary-color: rgb(227,82,44);
-    --border-color: rgb(182, 145, 115);
+    --border-color: rgb(184, 165, 149);
     --primary-font: "Varela Round", sans-serif;
 }
 
@@ -156,7 +156,7 @@ textarea,
 button{
     padding: calc(0.4vh + 0.3vw);
     box-sizing: border-box;
-    border: 2px solid var(--border-color);
+    border: 3px solid var(--border-color);
     border-radius: 4px;
     font-size: calc(0.5vh + 0.3vw + 5px);
 }
