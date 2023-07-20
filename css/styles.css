@@ -128,56 +128,36 @@ main{
     bottom: -3vh;
 }
 
-.first-row{
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    row-gap: 4rem;
-}
-
-.second-row{
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    row-gap: 4rem;
-}
-
-.third-row{
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    row-gap: 4rem;
-}
-
+.first-row,
+.second-row,
+.third-row,
 .fourth-row{
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
     row-gap: 4rem;
     position: relative;
+    padding-top: 0.5vh;
 }
 
-.fifth-row{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    row-gap: 4rem;
-}
-
+.fifth-row,
 .sixth-row{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     row-gap: 4rem;
+    position: relative;
+    padding-top: 0.5vh;
 }
 
 select,
 input,
 textarea,
 button{
-    padding: 0.6rem;
+    padding: calc(0.4vh + 0.3vw);
     box-sizing: border-box;
     border: 2px solid var(--border-color);
+    font-size: calc(0.5vh + 0.3vw + 5px);
 }
 
 select,
@@ -187,6 +167,7 @@ input{
 
 textarea{
     resize: none;
+    width: 39%;
 }
 
 select{
@@ -202,16 +183,16 @@ input:invalid{
     color: var(--secondary-color);
 }
 
-input[type="password"] + span{
+input[type="password"] ~ span{
     position: absolute;
     width: 15%;
 }
 
-input[type="password"]:focus + span::after{
+input[type="password"]:focus ~ span::after{
     opacity: 1;
 }
 
-input[type="password"] + span::after{
+input[type="password"] ~ span::after{
     content: "Enter at least 8 characters containing alphabets and numbers";
     position: absolute;
     left:-1vw;
@@ -223,5 +204,44 @@ input[type="password"] + span::after{
     border: 1px solid white;
     padding: calc(0.4vh + 0.2vw + 1px);
     box-shadow: 1px 1px 4px grey, -1px -1px 4px grey;
+}
+
+textarea + label.first-field,
+select + label.first-field,
+input + label.first-field{
+    opacity: 0;
+    position: absolute;
+    left: 14vw;
+    top: -3vh;
+    margin-top: 1vh;                            /*So the label doesn't go too far below into the input field upon viewport shrink*/
+    font-size: calc(0.5vh + 0.3vw + 5px);
+    transition: opacity 0.5s;
+}
+
+select + label.second-field,
+input + label.second-field{
+    opacity: 0;
+    position: absolute;
+    right: 14vw;
+    top: -3vh;
+    margin-top: 1vh;
+    font-size: calc(0.5vh + 0.3vw + 5px);
+    transition: opacity 0.5s;
+}
+
+textarea + label.first-field{
+    opacity: 0;
+    position: absolute;
+    left: 20vw;
+    top: -3vh;
+    margin-top: 1vh;                            /*So the label doesn't go too far below into the input field upon viewport shrink*/
+    font-size: calc(0.5vh + 0.3vw + 5px);
+    transition: opacity 0.5s;
+}
+
+textarea:not(:placeholder-shown) + label,
+select:valid + label,
+input:not(:placeholder-shown) + label{
+    opacity: 1;
 }
 
