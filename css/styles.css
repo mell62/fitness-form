@@ -190,6 +190,21 @@ textarea{
 select{
     appearance: none;
     background-color: white;
+    cursor: pointer;
+}
+
+select ~ span{
+    position: absolute;
+    cursor: pointer;
+}
+
+select ~ span::before{
+    content: "\1F53B";
+    position: absolute;
+    left: 17.2vw;
+    top: 1.2vh;
+    font-size: calc(0.7vh + 0.4vw + 3px);
+    color: var(--border-color);
 }
 
 input::placeholder{
