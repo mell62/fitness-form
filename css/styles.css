@@ -1,7 +1,7 @@
 :root{
     --primary-color: rgb(240, 184, 0);
     --secondary-color: rgb(227,82,44);
-    --border-color: rgba(181,130,88);
+    --border-color: rgb(182, 145, 115);
     --primary-font: "Varela Round", sans-serif;
 }
 
@@ -163,6 +163,15 @@ button{
 select,
 input{
     width: 18%;
+}
+
+button{
+    border: 0;
+    background-color: var(--border-color);
+    padding: 1% 2%;
+    border-radius: 3px;
+    color: white;
+    font-weight: bold;
 }
 
 textarea{
