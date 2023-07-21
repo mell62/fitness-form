@@ -6,6 +6,7 @@ const cpassMessage = document.querySelector(".cpassword-message");
 function passCheck(event) {
   if (passField.value !== cpassField.value) {
     event.preventDefault();
+    cpassField.focus();
     cpassMessage.setAttribute("style", "opacity: 1;");
     setTimeout(vanishMessage, 3000);
   }
