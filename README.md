@@ -6,4 +6,6 @@ Forms play a pivotal role in digital services, particularly in the context of we
 
 **Check out my form :point_right:[here](https://mell62.github.io/fitness-form):point_left:!**
 
-![form-screenshot](./images/screenshot.png)
+![form-screenshot1](./images/screenshot.png)
+
+![form-screenshot2](./images/screenshot2.png)
