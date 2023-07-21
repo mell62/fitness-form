@@ -291,3 +291,13 @@ input:not(:placeholder-shown) + label{
     opacity: 1;
 }
 
+footer{
+    margin-top: 6.5vh;
+    align-self: center;
+    font-size: calc(0.4vh + 0.3vw + 4px);
+}
+
+footer a{
+    text-decoration: underline;
+    color: var(--border-color);
+}
